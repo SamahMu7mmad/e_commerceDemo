@@ -1,0 +1,4 @@
+Please find the below points:
+- I had to rename the folder ".idea" to "idea", by removing the ".", so that to be able to upload it to git-hub
+- Regarding The WishList feature, I haven't add the assertion yet, as I'm still working on it, I found a re-usable code but I'm still trying to understand it.
+- Regarding Search feature, I'm still working on it. I need to apply the lowerCase method to the search results, create the SKU test methods and create a loop to confirm each result has the keyword searched
