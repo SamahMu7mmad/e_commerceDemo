@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 15 02:50:12 EET 2022</td>
+<td>Started on:</td><td>Tue Nov 15 14:33:01 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>133 seconds (133682 ms)</td>
+<tr><td>Total time:</td><td>151 seconds (151927 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,51 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open first slider", "F06_homeSliders | user could open sliders"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnSecondSlider(D06_homeSlidersStepDef.java:35)
+	at ✽.user click on second slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1980153091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1980153091'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnSecondSlider(D06_homeSlidersStepDef.java:35)
+	at ✽.user click on second slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:11)
+</pre></div></td>
+<td>6</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open first slider", "F06_homeSliders | user could open sliders"</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;display: block;&quot;. (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62872/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4802d039e4aa7452667c683c7fa0af6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57566/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e005cafe83a9ff8002f8569973fb3310
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnFirstSlider(D06_homeSlidersStepDef.java:21)
+	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnFirstSlider(D06_homeSlidersStepDef.java:20)
 	at ✽.user click on first slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1855589354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1855589354'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;display: block;&quot;. (tried for 5 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace846326826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace846326826'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain &quot;display: block;&quot;. (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62872/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4802d039e4aa7452667c683c7fa0af6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57566/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e005cafe83a9ff8002f8569973fb3310
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnFirstSlider(D06_homeSlidersStepDef.java:21)
+	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnFirstSlider(D06_homeSlidersStepDef.java:20)
 	at ✽.user click on first slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:6)
 </pre></div></td>
-<td>10</td>
+<td>9</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens rss link", "F07_followUs | users could open followUs links"</td>
@@ -106,47 +128,25 @@ Session ID: f4802d039e4aa7452667c683c7fa0af6
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62989/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f724fca145ead574faae6aeb65c497f3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57679/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d43b4e94fd8c2371ba118db959484fc0
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at org.example.stepDef.D07_followUsStepDef.userOpensRssLink(D07_followUsStepDef.java:36)
 	at ✽.user opens rss link(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F07_followUs.feature:12)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1921167141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1921167141'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of open windows to be 2 (tried for 5 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1958310934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1958310934'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of open windows to be 2 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62989/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f724fca145ead574faae6aeb65c497f3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57679/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d43b4e94fd8c2371ba118db959484fc0
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at org.example.stepDef.D07_followUsStepDef.userOpensRssLink(D07_followUsStepDef.java:36)
 	at ✽.user opens rss link(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F07_followUs.feature:12)
 </pre></div></td>
 <td>11</td>
-<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
-<tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open first slider", "F06_homeSliders | user could open sliders"</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnSecondSlider(D06_homeSlidersStepDef.java:36)
-	at ✽.user click on second slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace93974967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace93974967'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at org.example.stepDef.D06_homeSlidersStepDef.userClickOnSecondSlider(D06_homeSlidersStepDef.java:36)
-	at ✽.user click on second slider(file:///C:/Users/Dell/IdeaProjects/e_commerceDemo/src/main/resources/features/F06_homeSliders.feature:11)
-</pre></div></td>
-<td>5</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -157,12 +157,17 @@ Session ID: f724fca145ead574faae6aeb65c497f3
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens twitter link", "F07_followUs | users could open followUs links"</td>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "use can search using sku", "search feature test"</td>
 <td></td>
-<td>7</td>
+<td>8</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search by product name", "search feature test"</td>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can select euro currency", "test currency selection"</td>
+<td></td>
+<td>6</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "use can search using sku", "search feature test"</td>
 <td></td>
 <td>7</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
@@ -172,19 +177,24 @@ Session ID: f724fca145ead574faae6aeb65c497f3
 <td>7</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search by product name", "search feature test"</td>
-<td></td>
-<td>6</td>
-<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
-<tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with valid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
 <td></td>
 <td>8</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "hoover category and select sub category", "test hoover categories"</td>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "use can search using sku", "search feature test"</td>
 <td></td>
 <td>7</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "hoover category and select sub category", "test hoover categories"</td>
+<td></td>
+<td>6</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search by product name", "search feature test"</td>
+<td></td>
+<td>6</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | users could register with new accounts"</td>
@@ -194,10 +204,10 @@ Session ID: f724fca145ead574faae6aeb65c497f3
 <tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search by product name", "search feature test"</td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can select euro currency", "test currency selection"</td>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can't login with invalid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
 <td></td>
 <td>7</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
@@ -207,14 +217,19 @@ Session ID: f724fca145ead574faae6aeb65c497f3
 <td>10</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 <tr>
-<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can't login with invalid email and password", "F02_Login | users could use login functionality to use their accounts"</td>
-<td></td>
-<td>8</td>
-<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
-<tr>
 <td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can add products to wishList", "wishlist test"</td>
 <td></td>
-<td>13</td>
+<td>12</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user can search by product name", "search feature test"</td>
+<td></td>
+<td>6</td>
+<td>org.example.testRunner.runners@2fd6b6c7</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens twitter link", "F07_followUs | users could open followUs links"</td>
+<td></td>
+<td>7</td>
 <td>org.example.testRunner.runners@2fd6b6c7</td></tr>
 </table><p>
 </body>
